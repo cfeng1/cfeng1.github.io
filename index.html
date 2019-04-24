@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Faith Feng</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="index.html#research" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESEARCH</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <a href="other.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OTHER</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
+  <a href="#research" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESEARCH</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#other" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">OTHER</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="image" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80" alt="header_pic" width="1600" height="400">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Chi (Faith) Feng</h1>
+  </div>
+</header>
+
+  <!-- Intro Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="intro">
+    <p class="w3-justify"> I'm an economics PhD candidate in Tepper School of Business at Carnegie Mellon University. My primary field is applied microeconomics, and my research interests include open source innovation, team formation and venture capital investments. </p>   
+  </div>
+
+  <!-- Research Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="research">
+    <h2 class="w3-wide">Research Projects</h2>
+    <p class="w3-justify" style="font-style:oblique; font-weight: bold"> Decentralized Collaboration of Open Source Developers </p>
+    <p class="w3-justify"> Since the 1990s, we have witnessed much success in open source software industry including Apache and Mozilla. But there are much more small, inactive projects than big, active ones on open source platforms. This project examines the following questions using discrete choice model and GitHub data: Why aren’t there more successful open source projects? Is it possible to reduce the proportion of small, inactive projects? </p>
+
+    <p class="w3-justify" style="font-style:oblique; font-weight: bold"> Investment Decisions of Venture Capitalists (with Robert Miller)</p>
+    <p class="w3-justify"> After 2000, there has been a significant reduction in the number of IPO in US. Con- sidering that start-ups in venture market is one of the most important sources for IPO, it is natural to consider how venture capitalists make investments. In this project, we build a structural model to characterize the investment decision of venture capitalists using venture funding records from 1968 to 2017. </p>
+
+    <p class="w3-justify" style="font-style:oblique; font-weight: bold"> Strategic Formation of Coauthorships in Academia under Career Concern</p>
+    <p class="w3-justify"> In academia, alphabetical ordering of authors in a publication may lead to ambiguous inference of contribution. Thus researchers would choose coauthors strategically to best signal their contributions, leading to potential inefficient coauthorships. Here I develop a dynamic model for coauthorship formation under career concerns, using data of all publication records in economics and finance. </p>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.linkedin.com/in/cfeng1" class="fa fa-linkedin w3-hover-opacity"></a>
+  <a href="https://github.com/cfeng1" class="fa fa-github-square w3-hover-opacity"></a>
+  <!-- <i class="fa fa-github-square w3-hover-opacity"></i> -->
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
+
